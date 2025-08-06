@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bulenga W | Beauty Salon</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      line-height: 1.6;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 100px;
+      height: auto;
+    }
+    .tagline {
+      font-style: italic;
+      font-size: 1rem;
+      margin-top: 10px;
+      color: #f0c0d0;
+    }
+    .promo {
+      background: #f72585;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/featured/?salon') no-repeat center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 1px 1px 5px #000;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    form button {
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .whatsapp-float:hover {
+      background-color: #1ebe57;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpeg" alt="Bulenga W Logo" />
+    <div class="tagline">Your Confidence and Elegance is our priority!</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="promo">🎉 GET 35% OFF – Limited time offer!</div>
+
+  <section class="hero" id="home">
+    <h2>Glow with Confidence</h2>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Bulenga W – your premium beauty destination for flawless nails, rejuvenating facials, and head-turning hairstyles. We believe beauty is personal, and we make it unforgettable.</p>
+  </section>
+
+  <section class="section services" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Hairdressing and treatment</li>
+      <li>Nail technology</li>
+      <li>Pedicure and Manicure</li>
+      <li>Lash technology</li>
+      <li>Waxing</li>
+      <li>Wig installation and wig treatment</li>
+      <li>Makeup service</li>
+      <li>Hair treatment</li>
+      <li>Weave installation</li>
+      <li>Sale of beauty products</li>
+    </ul>
+  </section>
+
+  <section class="section gallery" id="gallery">
+    <h2>Gallery</h2>
+    <img src="https://source.unsplash.com/featured/?nail,salon" alt="Gallery Image" />
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p><strong>📍 Location:</strong> Take lift at PnP entrance floor 1, NORTHLAND CORNER shopping center, Northriding, Randburg</p>
+    <p><strong>📞 Phone:</strong> +27 74 633 6429</p>
+    <p><strong>📧 Email:</strong> Nyembwe07@gmail.com</p>
+    <p><strong>📱 Socials:</strong> @bulenga_W (Instagram & TikTok)</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bulenga W | All rights reserved</p>
+    <p>📍 Northriding, Randburg | 📞 +27 74 633 6429 | 📧 Nyembwe07@gmail.com</p>
+    <p>Follow us: Instagram & TikTok: @bulenga_W</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/27746336429?text=Hello%20Bulenga%20W!%20I%20would%20like%20to%20book%20an%20appointment." target="_blank">💬 Chat on WhatsApp</a>
+</body>
+</html>
